@@ -7,7 +7,7 @@ export default async function handler(req, res) {
 
   const BILLPLZ_API_KEY    = process.env.BILLPLZ_API_KEY;
   const BILLPLZ_COLLECTION = process.env.BILLPLZ_COLLECTION_ID;
-  const BILLPLZ_BASE       = 'https://www.billplz.com/api/v3'; // 正式环境
+  const BILLPLZ_BASE = 'https://www.billplz-sandbox.com/api/v3'; // Sandbox
 
   const credentials = Buffer.from(`${BILLPLZ_API_KEY}:`).toString('base64');
 
